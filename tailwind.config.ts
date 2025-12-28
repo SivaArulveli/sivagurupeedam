@@ -57,32 +57,26 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Sacred Custom Colors
-        cosmic: {
-          void: "hsl(var(--cosmic-void))",
+        // Sacred custom colors
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          dark: "hsl(var(--gold-dark))",
         },
-        divine: {
-          gold: "hsl(var(--divine-gold))",
-          glow: "hsl(var(--divine-gold-glow))",
-        },
-        marble: {
-          white: "hsl(var(--marble-white))",
-        },
-        ethereal: {
-          blue: "hsl(var(--ethereal-blue))",
-        },
-        sacred: {
-          amber: "hsl(var(--sacred-amber))",
-        },
+        emerald: "hsl(var(--emerald))",
+        royal: "hsl(var(--royal-blue))",
+        purple: "hsl(var(--purple))",
+        crimson: "hsl(var(--crimson))",
       },
       fontFamily: {
-        sacred: ['Cormorant Garamond', 'serif'],
-        geometric: ['Rajdhani', 'sans-serif'],
+        sacred: ['Cinzel', 'serif'],
+        sans: ['Inter', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        "2xl": "1rem",
+        "3xl": "1.5rem",
       },
       keyframes: {
         "accordion-down": {
@@ -97,14 +91,6 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-sacred': 'var(--gradient-sacred)',
-      },
-      boxShadow: {
-        'sacred': 'var(--shadow-sacred)',
-        'glow': 'var(--shadow-glow)',
       },
     },
   },
