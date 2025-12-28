@@ -57,6 +57,27 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Sacred Custom Colors
+        cosmic: {
+          void: "hsl(var(--cosmic-void))",
+        },
+        divine: {
+          gold: "hsl(var(--divine-gold))",
+          glow: "hsl(var(--divine-gold-glow))",
+        },
+        marble: {
+          white: "hsl(var(--marble-white))",
+        },
+        ethereal: {
+          blue: "hsl(var(--ethereal-blue))",
+        },
+        sacred: {
+          amber: "hsl(var(--sacred-amber))",
+        },
+      },
+      fontFamily: {
+        sacred: ['Cormorant Garamond', 'serif'],
+        geometric: ['Rajdhani', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,25 +86,25 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-sacred': 'var(--gradient-sacred)',
+      },
+      boxShadow: {
+        'sacred': 'var(--shadow-sacred)',
+        'glow': 'var(--shadow-glow)',
       },
     },
   },
