@@ -4,9 +4,9 @@ interface DimensionItemProps {
 }
 
 const DimensionItem = ({ label, value }: DimensionItemProps) => (
-  <li className="flex justify-between border-b border-border/50 pb-2 last:border-0">
-    <span className="font-medium text-foreground">{label}</span>
-    <span className="text-accent font-bold">{value}</span>
+  <li className="flex justify-between border-b border-primary/10 pb-3 last:border-0">
+    <span className="font-medium text-foreground/80">{label}</span>
+    <span className="text-primary font-bold">{value}</span>
   </li>
 );
 
@@ -22,8 +22,8 @@ const SacredDimensions = () => {
   ];
 
   return (
-    <section className="glass-panel p-6 md:p-8 rounded-2xl">
-      <h2 className="font-sacred text-xl md:text-2xl text-accent mb-4 border-b border-primary/20 pb-2 tracking-wide">
+    <section className="glass-panel p-6 md:p-8 rounded-2xl cosmic-glow animate-fade-in-up">
+      <h2 className="font-sacred text-2xl md:text-3xl gold-text-gradient mb-6 tracking-wide">
         Sacred Dimensions
       </h2>
       <ul className="space-y-3">

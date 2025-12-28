@@ -61,14 +61,17 @@ export default {
         gold: {
           DEFAULT: "hsl(var(--gold))",
           dark: "hsl(var(--gold-dark))",
+          glow: "hsl(var(--gold-glow))",
         },
         emerald: "hsl(var(--emerald))",
         royal: "hsl(var(--royal-blue))",
         purple: "hsl(var(--purple))",
         crimson: "hsl(var(--crimson))",
+        cosmic: "hsl(var(--cosmic-indigo))",
+        marble: "hsl(var(--marble))",
       },
       fontFamily: {
-        sacred: ['Cinzel', 'serif'],
+        sacred: ['Cormorant Garamond', 'serif'],
         sans: ['Inter', 'sans-serif'],
       },
       borderRadius: {
