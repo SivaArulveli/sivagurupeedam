@@ -1,11 +1,11 @@
 const Header = () => {
   return (
-    <header className="text-center mb-12 md:mb-16">
-      <h1 className="font-sacred text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 tracking-widest uppercase">
+    <header className="text-center mb-12 md:mb-16 animate-fade-in-up">
+      <h1 className="font-sacred text-4xl sm:text-5xl md:text-6xl lg:text-7xl gold-text-gradient mb-6 tracking-wide">
         Guru Sri Siva Swamigal
       </h1>
-      <div className="h-1 w-24 md:w-32 gold-gradient mx-auto mb-6" />
-      <p className="text-base md:text-xl italic text-muted-foreground max-w-2xl mx-auto px-4">
+      <div className="h-1 w-24 md:w-40 gold-gradient mx-auto mb-8 animate-glow-pulse rounded-full" />
+      <p className="text-lg md:text-2xl italic text-muted-foreground max-w-3xl mx-auto px-4 font-light">
         "The Divine Sanctum: A convergence of sacred geometry and spiritual alignment."
       </p>
     </header>

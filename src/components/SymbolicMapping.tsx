@@ -31,21 +31,21 @@ const SymbolicMapping = () => {
   ];
 
   return (
-    <section className="glass-panel p-6 md:p-8 rounded-2xl">
-      <h2 className="font-sacred text-xl md:text-2xl text-accent mb-4 border-b border-primary/20 pb-2 tracking-wide">
+    <section className="glass-panel p-6 md:p-8 rounded-2xl cosmic-glow animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+      <h2 className="font-sacred text-2xl md:text-3xl gold-text-gradient mb-6 tracking-wide">
         Symbolic Mapping
       </h2>
       <div className="space-y-4">
         {mappings.map((item) => (
-          <div key={item.label} className="flex gap-3">
-            <div className={`w-3 h-3 ${item.color} rounded-full mt-1.5 flex-shrink-0`} />
+          <div key={item.label} className="flex gap-3 p-3 rounded-xl hover:bg-primary/5 transition-colors">
+            <div className={`w-4 h-4 ${item.color} rounded-full mt-1 flex-shrink-0 animate-pulse-subtle`} />
             <div className="flex-1">
               <div className="flex items-baseline gap-2 flex-wrap">
-                <span className="font-semibold text-foreground text-sm">{item.label}</span>
-                <span className="text-xs text-muted-foreground">— {item.sanskrit}</span>
+                <span className="font-semibold text-foreground">{item.label}</span>
+                <span className="text-xs text-primary/80">— {item.sanskrit}</span>
               </div>
-              <p className="text-xs text-muted-foreground mt-0.5">{item.meaning}</p>
-              <p className="text-xs text-foreground/70 italic mt-1">{item.guruRelation}</p>
+              <p className="text-xs text-muted-foreground mt-1">{item.meaning}</p>
+              <p className="text-xs text-foreground/60 italic mt-1">{item.guruRelation}</p>
             </div>
           </div>
         ))}

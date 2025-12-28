@@ -2,40 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
-
 @layer base {
   :root {
-    /* Sacred Blueprint Palette - Light Mode */
-    --background: 40 33% 98%;
-    --foreground: 0 0% 10%;
+    /* Light mode - Marble & Gold */
+    --background: 30 20% 96%;
+    --foreground: 240 10% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card-foreground: 240 10% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 240 10% 15%;
 
-    /* Sacred Gold - Primary */
     --primary: 43 74% 49%;
     --primary-foreground: 0 0% 100%;
 
-    /* Warm Stone - Secondary */
-    --secondary: 40 20% 94%;
-    --secondary-foreground: 0 0% 20%;
+    --secondary: 30 15% 90%;
+    --secondary-foreground: 240 10% 20%;
 
-    --muted: 40 15% 92%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 30 10% 85%;
+    --muted-foreground: 240 5% 45%;
 
-    /* Amber Accent */
-    --accent: 30 80% 35%;
+    --accent: 43 80% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 30% 88%;
-    --input: 40 20% 90%;
+    --border: 30 20% 85%;
+    --input: 30 15% 88%;
     --ring: 43 74% 49%;
 
     --radius: 1rem;
@@ -43,45 +38,80 @@
     /* Custom Sacred Colors */
     --gold: 43 74% 52%;
     --gold-dark: 30 80% 35%;
+    --gold-glow: 43 80% 65%;
     --emerald: 160 84% 18%;
     --royal-blue: 221 83% 40%;
     --purple: 270 70% 45%;
     --crimson: 0 72% 45%;
+    --cosmic-indigo: 235 45% 12%;
+    --marble: 30 20% 96%;
 
     /* Glass Effect */
-    --glass-bg: 0 0% 100% / 0.8;
+    --glass-bg: 0 0% 100% / 0.7;
     --glass-border: 43 50% 70% / 0.3;
 
-    --sidebar-background: 40 33% 98%;
-    --sidebar-foreground: 0 0% 10%;
+    --sidebar-background: 30 20% 96%;
+    --sidebar-foreground: 240 10% 15%;
     --sidebar-primary: 43 74% 49%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 40 20% 94%;
-    --sidebar-accent-foreground: 0 0% 20%;
-    --sidebar-border: 40 30% 88%;
+    --sidebar-accent: 30 15% 90%;
+    --sidebar-accent-foreground: 240 10% 20%;
+    --sidebar-border: 30 20% 85%;
     --sidebar-ring: 43 74% 49%;
   }
 
   .dark {
-    --background: 20 14% 8%;
-    --foreground: 40 20% 95%;
-    --card: 20 14% 12%;
-    --card-foreground: 40 20% 95%;
-    --popover: 20 14% 10%;
-    --popover-foreground: 40 20% 95%;
-    --primary: 43 74% 52%;
-    --primary-foreground: 20 14% 8%;
-    --secondary: 20 10% 18%;
-    --secondary-foreground: 40 20% 90%;
-    --muted: 20 10% 20%;
-    --muted-foreground: 40 10% 60%;
-    --accent: 30 70% 45%;
-    --accent-foreground: 0 0% 100%;
-    --border: 20 15% 22%;
-    --input: 20 10% 18%;
-    --ring: 43 74% 52%;
-    --glass-bg: 20 14% 12% / 0.8;
-    --glass-border: 43 40% 40% / 0.3;
+    /* Deep Cosmic Indigo Theme */
+    --background: 235 45% 8%;
+    --foreground: 40 30% 95%;
+
+    --card: 235 40% 12%;
+    --card-foreground: 40 30% 95%;
+
+    --popover: 235 40% 10%;
+    --popover-foreground: 40 30% 95%;
+
+    /* Radiant Gold Primary */
+    --primary: 43 85% 55%;
+    --primary-foreground: 235 45% 8%;
+
+    /* Deep Indigo Secondary */
+    --secondary: 235 35% 18%;
+    --secondary-foreground: 40 30% 90%;
+
+    --muted: 235 30% 20%;
+    --muted-foreground: 40 20% 65%;
+
+    /* Gold Accent */
+    --accent: 43 90% 50%;
+    --accent-foreground: 235 45% 8%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 235 30% 22%;
+    --input: 235 35% 18%;
+    --ring: 43 85% 55%;
+
+    /* Custom Sacred Colors - Enhanced for dark mode */
+    --gold: 43 85% 55%;
+    --gold-dark: 43 70% 40%;
+    --gold-glow: 43 90% 70%;
+    --cosmic-indigo: 235 45% 12%;
+    --marble: 40 30% 92%;
+
+    /* Glass Effect - Dark Mode */
+    --glass-bg: 235 40% 12% / 0.85;
+    --glass-border: 43 60% 45% / 0.25;
+
+    --sidebar-background: 235 45% 8%;
+    --sidebar-foreground: 40 30% 95%;
+    --sidebar-primary: 43 85% 55%;
+    --sidebar-primary-foreground: 235 45% 8%;
+    --sidebar-accent: 235 35% 18%;
+    --sidebar-accent-foreground: 40 30% 90%;
+    --sidebar-border: 235 30% 22%;
+    --sidebar-ring: 43 85% 55%;
   }
 }
 
@@ -98,7 +128,8 @@
 
 @layer components {
   .sacred-font {
-    font-family: 'Cinzel', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
   }
 
   .blueprint-bg {
@@ -107,13 +138,39 @@
   }
 
   .gold-gradient {
-    background: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(45 80% 70%) 50%, hsl(var(--gold)) 100%);
+    background: linear-gradient(135deg, hsl(var(--gold-dark)) 0%, hsl(var(--gold)) 50%, hsl(var(--gold-glow)) 100%);
+  }
+
+  .gold-text-gradient {
+    background: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--gold-glow)) 50%, hsl(var(--gold)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .glass-panel {
     background: hsl(var(--glass-bg));
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     border: 1px solid hsl(var(--glass-border));
+  }
+
+  .marble-surface {
+    background: linear-gradient(135deg, hsl(var(--marble)) 0%, hsl(var(--marble) / 0.9) 100%);
+  }
+
+  .cosmic-glow {
+    box-shadow: 0 0 60px -15px hsl(var(--gold) / 0.3),
+                0 0 30px -10px hsl(var(--gold) / 0.2);
+  }
+
+  .geometric-pattern {
+    background-image: 
+      linear-gradient(30deg, hsl(var(--gold) / 0.03) 12%, transparent 12.5%, transparent 87%, hsl(var(--gold) / 0.03) 87.5%),
+      linear-gradient(150deg, hsl(var(--gold) / 0.03) 12%, transparent 12.5%, transparent 87%, hsl(var(--gold) / 0.03) 87.5%),
+      linear-gradient(30deg, hsl(var(--gold) / 0.03) 12%, transparent 12.5%, transparent 87%, hsl(var(--gold) / 0.03) 87.5%),
+      linear-gradient(150deg, hsl(var(--gold) / 0.03) 12%, transparent 12.5%, transparent 87%, hsl(var(--gold) / 0.03) 87.5%);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px;
   }
 
   /* SVG Geometry Classes */
@@ -184,12 +241,45 @@
     50% { opacity: 0.7; }
   }
 
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 20px -5px hsl(var(--gold) / 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 40px -5px hsl(var(--gold) / 0.5);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
   .animate-fade-in-up {
     animation: fade-in-up 0.8s ease-out forwards;
   }
 
   .animate-pulse-subtle {
     animation: pulse-subtle 3s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, hsl(var(--gold) / 0.2), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
   }
 
   .delay-100 { animation-delay: 100ms; }
